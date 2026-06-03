@@ -1,7 +1,7 @@
 import { StyleSheet, View } from "react-native";
 import ProfilePage from "../../components/Profile";
 
-export default function Index() {
+export default function Index({}) {
   return (
     <View style={styles.container}>
       <ProfilePage />

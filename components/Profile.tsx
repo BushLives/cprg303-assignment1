@@ -1,5 +1,12 @@
-import { Image, StatusBar, StyleSheet, Text, View } from "react-native";
-
+import {
+  Image,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+const posts = {};
 const ProfilePage = () => {
   return (
     <View style={styles.container}>
@@ -34,6 +41,12 @@ const ProfilePage = () => {
         <Text>OODT Everyday</Text>
         <Text>Fit Check!</Text>
         <Text>You know we'll hype you up.</Text>
+
+        <button>Members</button>
+      </View>
+
+      <View>
+        <ScrollView></ScrollView>
       </View>
     </View>
   );
@@ -62,7 +75,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   subtext: {
-    fontSize: 10,
+    fontSize: 12,
     textAlign: "center",
     color: "gray",
     justifyContent: "center",
@@ -91,4 +104,7 @@ const styles = StyleSheet.create({
     textAlignVertical: "auto",
     padding: 12,
   },
+  Stat_text: {},
+  Desciption_text: {},
+  Member_button: {},
 });
